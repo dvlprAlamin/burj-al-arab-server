@@ -5,7 +5,7 @@ require('dotenv').config()
 const app = express();
 app.use(cors())
 app.use(express.json());
-const serviceAccount = require("./privateKey/burj-al-arab-99-firebase-adminsdk-9yr6g-a5e1a452c6.json");
+const serviceAccount = require("./configs/burj-al-arab-99-firebase-adminsdk-9yr6g-a5e1a452c6.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
